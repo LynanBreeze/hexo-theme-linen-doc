@@ -1,0 +1,16 @@
+version: 1.0.0
+siteOriginLocaleMap:
+  zh-CN: https://lynanbreeze.github.io/hexo-theme-linen-doc-zh-CN/
+  en: https://lynanbreeze.github.io/hexo-theme-linen-doc/
+info:
+  site_desc: A Simple Hexo Theme.
+  github: https://github.com/LynanBreeze/hexo-theme-linen-doc
+  siteCardBg: /img/og-img.jpg
+navItems:
+  - name: Archives
+    path: /archives/
+topArticles:
+  - _posts/quick-start.md
+  - _posts/customization.md
+  - _posts/write-with-markdown.md
+  - _posts/image-grid.md
