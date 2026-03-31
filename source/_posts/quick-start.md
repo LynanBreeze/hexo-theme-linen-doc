@@ -7,7 +7,7 @@ cover: /img/markus-winkler-newg0EE_rxw-unsplash.jpg
 coverInfo: 
   author: Markus Winkler
   url: https://unsplash.com/photos/a-close-up-of-a-street-sign-on-the-ground-newg0EE_rxw
-series: User Guide
+series: User-Guide
 appendRawMarkdown: true
 tocType: flat
 translations: ['zh-CN']

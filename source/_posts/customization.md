@@ -7,7 +7,7 @@ cover: /img/vinicius-amnx-amano-17NCG_wOkMY-unsplash.jpg
 coverInfo:
 author: Markus Winkler
 url: https://unsplash.com/photos/a-close-up-of-a-street-sign-on-the-ground-newg0EE_rxw
-series: User Guide
+series: User-Guide
 appendRawMarkdown: true
 tocType: flat
 translations: ['zh-CN']

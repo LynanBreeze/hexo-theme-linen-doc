@@ -5,7 +5,7 @@ cover: /img/vackground-com-hDQ-dUjQN8E-unsplash.jpg
 coverInfo:
 author: vackground.com
 url: https://unsplash.com/photos/a-blue-and-white-abstract-background-with-hexagonal-shapes-hDQ-dUjQN8E
-series: User Guide
+series: User-Guide
 appendRawMarkdown: true
 tocType: flat
 translations: ['zh-CN']

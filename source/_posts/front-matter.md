@@ -6,7 +6,7 @@ cover: /img/freestocks-VFs2fZEVkXo-unsplash.jpg
 coverInfo:
 author: freestocks
 url: https://unsplash.com/photos/top-view-of-opened-magazine-near-up-of-coffee-VFs2fZEVkXo
-series: User Guide
+series: User-Guide
 appendRawMarkdown: true
 tocType: flat
 customComments:

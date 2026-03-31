@@ -5,7 +5,7 @@ cover: /img/volodymyr-hryshchenko-V5vqWC9gyEU-unsplash.jpg
 coverInfo:
 author: Volodymyr Hryshchenko
 url: https://unsplash.com/photos/three-crumpled-yellow-papers-on-green-surface-surrounded-by-yellow-lined-papers-V5vqWC9gyEU
-series: User Guide
+series: User-Guide
 appendRawMarkdown: true
 tocType: flat
 translations: ['zh-CN']

@@ -6,7 +6,7 @@ cover: /img/ivan-shimko-PhciG8fpRKw-unsplash.jpg
 coverInfo:
 author: Ivan Shimko
 url: https://unsplash.com/photos/three-beach-illustrations-PhciG8fpRKw
-series: User Guide
+series: User-Guide
 appendRawMarkdown: true
 tocType: flat
 translations: ['zh-CN']

@@ -5,7 +5,7 @@ cover: /img/markus-winkler-GdpDAj8unB4-unsplash.jpg
 coverInfo:
 author: Markus Winkler
 url: https://unsplash.com/photos/a-wooden-block-spelling-subscribe-on-a-table-GdpDAj8unB4
-series: User Guide
+series: User-Guide
 appendRawMarkdown: true
 tocType: flat
 translations: ['zh-CN']
