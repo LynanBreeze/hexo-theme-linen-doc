@@ -27,7 +27,7 @@ You can use the Linen theme in one of two ways:
 
 1. Install via NPM
 
-    ```bash
+    ```bash npm install
     npm install hexo-theme-linen -S
     ```
 
@@ -35,7 +35,7 @@ You can use the Linen theme in one of two ways:
 
 2. Directly clone the theme files into the Hexo themes directory
 
-    ```bash
+    ```bash git clone
     git clone https://github.com/LynanBreeze/hexo-theme-linen.git
     ```
 
@@ -43,4 +43,4 @@ You can use the Linen theme in one of two ways:
 
 ## Customization
 
-Continue reading the [**next article**](/hexo-theme-linen-doc/customization/) to learn how to configure various customization options.
+Continue reading the [**Next Article**](/hexo-theme-linen-doc/customization/) to learn how to configure various customization options.
