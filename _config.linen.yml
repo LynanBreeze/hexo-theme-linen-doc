@@ -3,6 +3,7 @@ siteOriginLocaleMap:
   zh-CN: https://lynanbreeze.github.io/hexo-theme-linen-doc-zh-CN/
   en: https://lynanbreeze.github.io/hexo-theme-linen-doc/
 info:
+  logo: /img/logo_black.svg
   site_desc: A Simple Hexo Theme.
   github: https://github.com/LynanBreeze/hexo-theme-linen-doc
   siteCardBg: /img/og-img.jpg
