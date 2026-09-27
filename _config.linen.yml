@@ -17,3 +17,6 @@ topArticles:
   - _posts/customization.md
   - _posts/write-with-markdown.md
   - _posts/image-grid.md
+lazyload: 
+  enable: true
+photoswipe: true
