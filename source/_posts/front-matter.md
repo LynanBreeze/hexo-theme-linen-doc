@@ -1,12 +1,13 @@
 ---
 title: Article Configuration
-excerpt: Some custom Front Matter configurations.
+excerpt: Custom Front Matter options supported by Linen.
 date: 2026-03-28 23:53
 cover: /img/freestocks-VFs2fZEVkXo-unsplash.jpg
 coverInfo:
-author: freestocks
-url: https://unsplash.com/photos/top-view-of-opened-magazine-near-up-of-coffee-VFs2fZEVkXo
+  author: freestocks
+  url: https://unsplash.com/photos/top-view-of-opened-magazine-near-up-of-coffee-VFs2fZEVkXo
 series: User-Guide
+tags: [Quick-Start, Configuration]
 appendRawMarkdown: true
 tocType: flat
 customComments:
@@ -14,30 +15,57 @@ customComments:
     index: 0
     comment: Do you see the hover text?
 translations: ['zh-CN']
+copyright: true
+donates:
+  - type: wechat
+    qrcode: /img/freestocks-VFs2fZEVkXo-unsplash.jpg
+sponsors:
+  - name: Me
+    amount: A cup of coffee
+    date: 2026-04-12
 ---
+
+## Subtitle
+
+Add a subtitle that renders alongside the post title in the article header, post lists, banner posts, series directory, page `<title>`, and RSS feed:
+
+```yaml
+subTitle: Advanced Guide
+```
+
+## Cover, Thumbnail & Share Image
+
+Post image-related Front Matter options:
+
+```yaml
+cover: /img/cover.jpg
+coverPlaceholder: /img/cover-blur.jpg  # Optional placeholder image for the cover (URL or Base64)
+thumbnail: /img/thumb.jpg              # Optional thumbnail for post lists/banners/related posts/travel cards (takes priority over cover)
+ogImage: /img/og.jpg                   # Optional Open Graph og:image cover
+```
+
+Social share image (`og:image`) resolution priority: `seriesInfo.cover > ogImage > cover > info.siteCardBg`.
 
 ## Cover Information
 
-In the bottom-right corner of the cover image, you can add either author credits or location information (choose one).
-
-The format is as follows:
+In the bottom-right corner of the cover image, you can add either author credits or location information (choose one):
 
 - Author Information
-```yaml
-coverInfo:
-author: freestocks
-url: https://unsplash.com/photos/top-view-of-opened-magazine-near-up-of-coffee-VFs2fZEVkXo
-```
+  ```yaml
+  coverInfo:
+    author: freestocks
+    url: https://unsplash.com/photos/top-view-of-opened-magazine-near-up-of-coffee-VFs2fZEVkXo
+  ```
 - Location Information
-```yaml
-coverInfo:
-location: Macau · Municipal Affairs Bureau Building
-url: https://maps.apple.com/place?address=Avenida%20de%20Almeida%20Ribeiro%20No.%20163,%20Macao%20SAR,%20China&coordinate=22.193346,113.539592&name=%E5%B8%82%E6%94%BF%E7%BD%B2&place-id=IC211FBD448B1E6C&map=explore
-```
+  ```yaml
+  coverInfo:
+    location: Macau · Municipal Affairs Bureau Building
+    url: https://maps.apple.com/place?address=Avenida%20de%20Almeida%20Ribeiro%20No.%20163,%20Macao%20SAR,%20China&coordinate=22.193346,113.539592&name=%E5%B8%82%E6%94%BF%E7%BD%B2&place-id=IC211FBD448B1E6C&map=explore
+  ```
 
 ## Hover Text
 
-Sometimes you may wish to include explanatory notes, but you don't want to constantly append parenthetical text (like this) after your content. By adding the configuration shown below, you can attach hoverable explanatory text to specific parts of your writing. 
+Sometimes you want to attach explanatory notes without cluttering prose with parentheses (like this). Add `customComments` to attach hoverable tooltip notes to specific occurrences of text:
 
 For example, right here:
 
@@ -48,53 +76,151 @@ customComments:
     comment: Do you see the hover text?
 ```
 
-## Hiding Posts
+## Hiding Posts & SEO Control
 
-Adding the configuration below allows you to remove a post from the homepage or archive page (this does not prevent the post from being generated; the post page can still be accessed directly via its URL).
+Remove a post from the homepage or archives, or prevent search engine indexing (the post page is still generated and directly accessible by URL):
 
 ```yaml
 hide:
-recent: true
-archive: true
+  recent: true   # Exclude from homepage recent posts
+  archive: true  # Exclude from archives and site post counts
+  seo: true      # Output <meta name="robots" content="noindex, nofollow">
 ```
-
-Setting `recent: true` ensures the post does not appear on the homepage.
-Setting `archive: true` ensures the post does not appear in the archives.
 
 ## PhotoSwipe Plugin
 
-This plugin is sourced from [https://photoswipe.com/](https://photoswipe.com/). If you do not need it, you can disable it in the following ways:
+Powered by [https://photoswipe.com/](https://photoswipe.com/).
 
-Global Disable: Add `photoswipe: false` to `_config.linen.yml`.
-Page-level Disable: Add `photoswipe: false` to the Front Matter of the specific post.
+- Global Enable: Add `photoswipe: true` to `_config.linen.yml`.
+- Page-level Disable: When globally enabled, add `photoswipe: false` in a post's Front Matter to disable it on that page.
 
-Note that if a post contains no images, the PhotoSwipe plugin will not be loaded—even if `photoswipe: false` has not been explicitly specified.
+If a post contains no images or Live Photos, PhotoSwipe assets are not loaded.
 
 ## Table of Contents (TOC)
 
-There are three configuration options for the Table of Contents within the Front Matter:
+Three TOC modes are supported in Front Matter:
 
 - Hidden: `toc: false`
-- Expanded: `toc: flat`
-- Automatic: <small>(Leave blank/Add nothing)</small>
+- Expanded by default: `tocType: flat`
+- Auto collapse/expand: <small>(Leave blank / omit)</small>
 
 ## Image Lazy Loading
 
-This feature is enabled by default. If you do not need it, you can disable it in the following way:
+Enable lazy loading explicitly in `_config.linen.yml`:
 
-Global Disable: Add the following to `_config.linen.yml`:
-
-```_config.linen.yml
+```yaml _config.linen.yml
 lazyload:
-enable: false
+  enable: true
 ```
 
-After doing so, you must run `npm run clean` to clear the previously built posts; otherwise, the change will not take effect on posts that have already been generated.
+Run `hexo clean` (or `npm run clean`) after changing this setting so already-built posts are regenerated.
 
-If you wish to disable lazy loading for specific images only, you can reference those images using one of the following formats:
+You can also override `keepPlaceholder` for a specific post in Front Matter:
+
+```yaml
+lazyload:
+  keepPlaceholder: false
+```
+
+To skip lazy loading for individual images (or `<video>` / `<iframe>` elements), use any of the following:
 
 - `![no-lazy](https://abc.com/def.jpg)`
-
-- `![This is a image $no-lazy](https://abc.com/def.jpg)`
-
+- `![This is an image $no-lazy](https://abc.com/def.jpg)`
 - `<img no-lazy src="https://abc.com/def.jpg" alt="def">`
+
+For `$no-link`, `$aspect-ratio`, `$placeholder`, `assets-db/imgs/*.json`, and HDR switching, see [HDR & Advanced Image Settings](/hexo-theme-linen-doc/advanced-images/).
+
+## Raw Markdown Toggle
+
+Enable a "Switch to Raw Markdown Content" button in the post metadata bar so readers can inspect or copy the original Markdown source:
+
+```yaml
+appendRawMarkdown: true
+```
+
+## Post Age Notice
+
+For time-sensitive tutorials or notes, enable `ageWarning: true`. When a post is older than **180 days**, a notice banner is automatically shown at the top of the article:
+
+```yaml
+ageWarning: true
+```
+
+## Reading Time & Word Count
+
+By default, estimated reading time, word count, and photo count are displayed together. To hide the word/photo count and show only the estimated reading time:
+
+```yaml
+readTime:
+  count: false
+```
+
+## Disabling Comments Per Post
+
+When Gitalk is enabled globally, you can disable comments on a single post:
+
+```yaml
+comment: false
+```
+
+## Page-level `<head>` Injection
+
+Inject extra stylesheets or scripts into `<head>` for a single post:
+
+```yaml
+heads:
+  - <link rel="stylesheet" href="/css/custom-post.css">
+  - <script src="/js/custom-post.js" defer></script>
+```
+
+## Language & Translations
+
+Override the language for a single post (affecting date formatting, word counting, Gitalk language, and `og:locale`), and declare translated locales for the header language switcher (used together with `siteOriginLocaleMap` in `_config.linen.yml`):
+
+```yaml
+language: en
+translations: ['zh-CN']
+```
+
+## Related Posts
+
+Posts sharing 2 or more tags are automatically treated as related and shown at the bottom of the article. To hide related posts on a specific page:
+
+```yaml
+showRelated: false
+```
+
+## Copyright Notice
+
+Display a copyright notice banner at the bottom of the article:
+
+```yaml
+copyright: true
+```
+
+## Donate QR Codes & Sponsor List
+
+Configure donation QR codes in Front Matter:
+
+```yaml
+donates:
+  - type: wechat
+    qrcode: /img/wx_qr.jpg
+```
+
+To display a thank-you list of sponsors below the donate button, add `sponsors` (note: `sponsors` renders only when `donates` is also configured):
+
+```yaml
+sponsors:
+  - name: Me
+    amount: A cup of coffee
+    date: 2026-04-12
+```
+
+## More Dedicated Guides
+
+Additional Front Matter features have their own dedicated guides:
+
+- **Series & Travel Map** (`series`, `mapPlace`): see [Series & Travel Map](/hexo-theme-linen-doc/series-and-travel/)
+- **LaTeX Math Formulas** (`latex` / `math`): see [LaTeX Math Formulas](/hexo-theme-linen-doc/latex/)
+- **HDR Image Switching** (`hdrSwitch`, `hdrAssetsPrefix`): see [HDR & Advanced Image Settings](/hexo-theme-linen-doc/advanced-images/)

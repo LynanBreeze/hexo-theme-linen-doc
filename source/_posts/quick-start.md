@@ -23,9 +23,9 @@ Welcome to Linen—a minimalist, elegant Hexo theme. This theme draws much of it
 
 An existing Hexo project, or create a new one using https://hexo.io/docs/. Hexo version: `"^8.1.1"`.
 
-You can use the Linen theme in one of two ways:
+You can use the Linen theme in one of three ways:
 
-1. Install via NPM
+1. **Install via NPM**
 
     ```bash npm install
     npm install hexo-theme-linen -S
@@ -33,13 +33,19 @@ You can use the Linen theme in one of two ways:
 
     Then, in your Hexo project's configuration file (`_config.yml`), set `theme: linen`. Restart your Hexo project to enable the Linen theme.
 
-2. Directly clone the theme files into the Hexo themes directory
+2. **Directly clone the theme files into the Hexo themes directory**
 
     ```bash git clone
-    git clone https://github.com/LynanBreeze/hexo-theme-linen.git
+    git clone https://github.com/LynanBreeze/hexo-theme-linen.git themes/hexo-theme-linen
     ```
 
     Then, in your Hexo project's configuration file (`_config.yml`), set `theme: hexo-theme-linen`. Restart your Hexo project to enable the Linen theme.
+
+3. **Directly clone this documentation site repository and customize it**
+
+    ```bash git clone
+    git clone https://github.com/LynanBreeze/hexo-theme-linen-doc.git
+    ```
 
 ## Customization
 

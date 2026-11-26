@@ -4,8 +4,8 @@ siteOriginLocaleMap:
   en: https://lynanbreeze.github.io/hexo-theme-linen-doc/
 feed:
   path: /feed.xml
+  icon: /linen-theme/favicon.svg
 info:
-  logo: /img/logo_black.svg
   site_desc: A Simple Hexo Theme.
   github: https://github.com/LynanBreeze/hexo-theme-linen-doc
   siteCardBg: /img/og-img.jpg

@@ -1,5 +1,12 @@
 {
   "User-Guide": {
-    "noOrder": "asc"
+    "noOrder": "asc",
+    "mappingName": "用户指南"
+  },
+  "Travel": {
+    "yearDivider": true,
+    "showMobileIndex": false,
+    "description": "Slow down, listen to the wind, watch the clouds, and feel the gentle touch between my heart and nature.",
+    "mappingName": "旅行"
   }
 }

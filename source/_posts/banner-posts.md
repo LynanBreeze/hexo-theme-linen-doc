@@ -3,9 +3,10 @@ title: Banner Posts
 date: 2026-03-28 23:57
 cover: /img/vackground-com-hDQ-dUjQN8E-unsplash.jpg
 coverInfo:
-author: vackground.com
-url: https://unsplash.com/photos/a-blue-and-white-abstract-background-with-hexagonal-shapes-hDQ-dUjQN8E
+  author: vackground.com
+  url: https://unsplash.com/photos/a-blue-and-white-abstract-background-with-hexagonal-shapes-hDQ-dUjQN8E
 series: User-Guide
+tags: [Quick-Start, Configuration]
 appendRawMarkdown: true
 tocType: flat
 translations: ['zh-CN']
