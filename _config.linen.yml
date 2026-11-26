@@ -2,6 +2,8 @@ version: 1.0.0
 siteOriginLocaleMap:
   zh-CN: https://lynanbreeze.github.io/hexo-theme-linen-doc-zh-CN/
   en: https://lynanbreeze.github.io/hexo-theme-linen-doc/
+search:
+  enable: true
 feed:
   path: /feed.xml
   icon: /linen-theme/favicon.svg
