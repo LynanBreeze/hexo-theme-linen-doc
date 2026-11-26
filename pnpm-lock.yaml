@@ -39,8 +39,8 @@ importers:
         specifier: ^3.0.0
         version: 3.0.0
       hexo-theme-linen:
-        specifier: ^1.0.57
-        version: 1.0.57(chokidar@3.6.0)
+        specifier: ^1.0.59
+        version: 1.0.59(chokidar@3.6.0)
       moment:
         specifier: ^2.30.1
         version: 2.30.1
@@ -525,8 +525,8 @@ packages:
     resolution: {integrity: sha512-u4s0ty9Aew6jV+a9oMrXBwhrRpUQ0U8PWM/88a5aHgDru58VY81mVrxOFxs788NAsWQ8OvsJtF5m7mnXoRnSIA==}
     engines: {node: '>=12.13.0'}
 
-  hexo-theme-linen@1.0.57:
-    resolution: {integrity: sha512-jc+Ni3baeGvnWgS+/jrObaGQmT9nPGgrp29pnIlPVEhDznBF72DvFWNHmUFgynecQX0oSmTFr0OHr9/aMDjtqw==}
+  hexo-theme-linen@1.0.59:
+    resolution: {integrity: sha512-MbvZS/qeEIBCRaw+F7NIZN2l41iBB4NFC238ViG0hmzTEgNXygZKyIn8I+tmt2b2R+mTa4KXnGVE+ql5gm5aIQ==}
     engines: {node: '>=14.0.0'}
 
   hexo-util@3.3.0:
@@ -1475,7 +1475,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  hexo-theme-linen@1.0.57(chokidar@3.6.0):
+  hexo-theme-linen@1.0.59(chokidar@3.6.0):
     dependencies:
       hexo: 8.1.1(chokidar@3.6.0)
       hexo-pagination: 4.0.0
