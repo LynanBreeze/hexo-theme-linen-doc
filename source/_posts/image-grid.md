@@ -54,7 +54,7 @@ Use `scroll` or `slider` (both are equivalent, with `scroll-snap` alignment) to 
 :::image-grid scroll
 ![](/img/klara-kulikova-PgrSvkU1_4Y-unsplash.jpg)
 ![](/img/mariola-grobelska-rxFb6meV3ck-unsplash.jpg)
-![](/img/duy-le-duc-GUY2f9csQbc-unsplash.jpg)
+![](/img/pine-watt-2Hzmz15wGik-unsplash.jpg)
 :::
 
 ## Tabbed Image Switcher (`switcher`)
@@ -69,7 +69,7 @@ Use `switcher` to compare multiple images in place with an animated tab bar:
 :::image-grid switcher
 ![Option A](/img/klara-kulikova-PgrSvkU1_4Y-unsplash.jpg)
 ![Option B](/img/mariola-grobelska-rxFb6meV3ck-unsplash.jpg)
-![Option C](/img/duy-le-duc-GUY2f9csQbc-unsplash.jpg)
+![Option C](/img/pine-watt-2Hzmz15wGik-unsplash.jpg)
 :::
 
 > Tip: A plain `:::image-grid` without a layout class automatically adapts to 2–4 columns and also supports `<iframe>` embeds (such as Live Photos).
